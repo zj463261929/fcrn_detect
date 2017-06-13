@@ -1,0 +1,13 @@
+‘À––√¸¡Ó£∫THEANO_FLAGS=device=gpu1,floatX=float32 python train_model_zj.py  ../small_data
+
+nvidia-docker run -d -p 1009:6008 -p 1883:8888 -v /dataTwo:/notebooks --name synthText_train_zj --restart=always -e PASSWORD=a1b2c4 gds/keras-th-tf-opencv
+
+
+—µ¡∑£∫
+1.nb_epoch = 100 #1000
+mini_batch_size = 10
+num_samples_per_epoch = 600#50000 
+num_validation_samples = 600#5000
+
+
+
